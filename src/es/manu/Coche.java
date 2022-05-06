@@ -6,12 +6,6 @@ public class Coche {
     private String color;
     private int velocidad;
 
-    public Coche() {
-        tipo = "Desconocido";
-        modelo = "Desconocido";
-        color = "Desconocido";
-        velocidad = 0;
-    }
 
     public Coche(String tipo, String modelo, String color) {
         this.tipo = tipo;
@@ -26,9 +20,6 @@ public class Coche {
         return velocidad;
     }
 
-    public void cambiarColor(String nuevoColor) {
-        color = nuevoColor;
-    }
 
     public String getInfo() {
       return "Tipo: " + this.tipo + "\n" +
